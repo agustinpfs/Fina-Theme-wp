@@ -1,0 +1,24 @@
+{
+  "name": "fina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "nib": "^1.1.0",
+    "stylus": "^0.53.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agustinpfs/Fina-Theme-wp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agustinpfs/Fina-Theme-wp/issues"
+  },
+  "homepage": "https://github.com/agustinpfs/Fina-Theme-wp#readme"
+}
