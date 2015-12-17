@@ -9,9 +9,12 @@
 
 <body>
 	<header class="Header">
-		<nav class="Header-menu">
-			<span class="icon-menu2"></span>
-		</nav>
+		<div class="Header-menu">
+			<label class="Header-label" for="menu">
+				<span class="icon-menu2"></span>
+			</label>
+			<input type="checkbox" class="check" id="menu">								
+		</div>
 		<div class="Header-title">
 			<figure>
 				<h1 class="Header-h1">F</h1>
@@ -19,3 +22,4 @@
 			<h2><?php bloginfo('description' ); ?></h2>
 		</div>
 	</header>
+	<?php include TEMPLATEPATH . '/nav.php' ?>

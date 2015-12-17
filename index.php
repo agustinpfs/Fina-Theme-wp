@@ -10,11 +10,12 @@
 			<figure>
 				<?php the_post_thumbnail(large); ?>
 			</figure>
-				<div class="Index-title">
-					<a href="<?php the_permalink(); ?>"> 
-						<?php the_title(); ?>
-					</a>
-				</div>		
+			<div class="Index-title">				
+				<?php the_title(); ?>				
+			</div>
+			<div class="Index-excerpt">
+				<?php the_excerpt(); ?>
+			</div>
 		</article>
 
 		
