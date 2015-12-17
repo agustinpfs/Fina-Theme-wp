@@ -8,7 +8,7 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<article class="Index-article">
 			<figure>
-				<?php the_post_thumbnail(medium); ?>
+				<?php the_post_thumbnail(large); ?>
 			</figure>
 				<div class="Index-title">
 					<a href="<?php the_permalink(); ?>"> 
