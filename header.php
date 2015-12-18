@@ -29,7 +29,7 @@
 
 <script>
 	function showMenu() {
-	$( ".Header-nav" ).slideToggle(1500)
+	$( ".Header-nav" ).slideToggle(500)
 
 
 	}

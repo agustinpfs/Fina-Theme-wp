@@ -8,11 +8,12 @@
 		// margin-top 2rem
 		text-align: center
 		top 4rem
+		margin-left 2rem
 		
 		h2
-			font-size: 3rem			
+			font-size: 2rem			
 	&-h1
-		font-size: 6rem
+		font-size: 5rem
 		font-family: 'fine'
 		line-height: 0
 		margin-bottom 2rem
@@ -23,10 +24,52 @@
 		right 2rem
 		top 2rem
 		font-size: 2rem
-.Header-contentNav
-	padding-top 8rem
-.Header-nav
-	display none
+	&-contentNav
+		padding-top 11rem
+	&-nav
+		display none
+		width 100%
+		background-color black-clear
+		ul
+			display flex 
+			justify-content: space-between
+			padding 2rem
+			
+
+		li 
+			list-style: none
+		li:hover
+			background-color transparent
+			border-top 0px solid transparent	
+			
+		li:after
+			content ''
+			display block
+			height 1px
+			width 0
+			background transparent
+			transition width .5s ease, background-color .5s ease
+			margin-top .3rem			
+		// a
+		// display inline-block		
+		// a:after
+		// 	content ''
+		// 	display block
+		// 	height 2px
+		// 	width 0
+		// 	background transparent
+		// 	transition width .5s ease, background-color .5s ease
+		// 	margin-top .3rem				
+		li:hover:after
+			width 100%
+			background grey
+		
+
+		a 
+			text-decoration: none
+			font-size: 1.2rem
+			color grey
+			
 	
 nav
 ul

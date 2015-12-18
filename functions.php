@@ -14,3 +14,8 @@ function register_my_menus() {
         );
 }
 add_action('init', 'register_my_menus');
+
+function longitud_excerpt($length) {
+    return 20;
+}
+add_filter('excerpt_length', 'longitud_excerpt');

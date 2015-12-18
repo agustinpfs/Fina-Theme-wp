@@ -29,3 +29,23 @@
 
 </main>
 
+<script>
+
+	$( ".Index-article" ).hover(
+	  function() {
+	    $( this ).find( ".Index-excerpt" ).slideToggle(400)
+	  }
+	);
+	// function showExcerpt() {
+	// $( ".Index-excerpt" ).slideToggle(500)
+
+
+
+	// }
+	// $( ".Index-article" ).hover( showExcerpt )
+
+	// $( ".Header-icon" ).click(function() {
+	//   $( ".Header-nav" ).slideToggle( "slow" );
+	// });
+
+</script>
