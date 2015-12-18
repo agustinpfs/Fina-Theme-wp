@@ -2,7 +2,7 @@
 
 add_theme_support( 'post-thumbnails' );
 
-add_image_size('custom', 400, 400);
+add_image_size('custom', 600, 600);
 
 
 function register_my_menus() {

@@ -71,14 +71,17 @@
 			color grey
 			
 	
-nav
-ul
-li 
-header
-	margin 0
-	padding 0
+
 					
-	
+@media (max-width: 580px)
+
+	.Header
+		&-nav
+			ul
+				flex-direction: column	
+				padding-bottom 0
+			li 
+				margin-bottom 2rem
 
 // .height0
 // 	animation 2s menu0 forwards
