@@ -6,19 +6,20 @@
 		<?php rewind_posts(); ?>
 		<?php query_posts('cat=2'); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<a href="<?php the_permalink(); ?>">		
 			<article class="Index-article">
-				<figure>
-					<?php the_post_thumbnail(large); ?>
-				</figure>
-				<div class="Index-title">				
-					<?php the_title(); ?>				
-				</div>
-				<div class="Index-excerpt">
-					<?php the_excerpt(); ?>
-				</div>
+				<a href="<?php the_permalink(); ?>">
+					<figure>
+						<?php the_post_thumbnail(large); ?>
+					</figure>
+					<div class="Index-title">				
+						<?php the_title(); ?>				
+					</div>
+					<div class="Index-excerpt">
+						<?php the_excerpt(); ?>
+					</div>
+				</a>
 			</article>
-		</a>
+		
 		
 		
 	<?php endwhile; ?>
