@@ -1,5 +1,5 @@
 <div class="RecentPosts">
-	<h3 class="RecentPosts">Recientes</h3>
+	<h3 class="RecentPosts-h3">Recientes</h3>
 	<?php rewind_posts(); ?>
 	<?php query_posts('posts_per_page=5'); ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

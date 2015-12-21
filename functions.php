@@ -9,7 +9,8 @@ function register_my_menus() {
     register_nav_menus(
             array(
                 'menu-header' => __('Menú del encabezado'),
-                'menu-footer' => __('Menú del footer')
+                'menu-footer' => __('Menú del footer'),
+                'menu-sidebar' => __('Menú del sidebar')
                 )
         );
 }

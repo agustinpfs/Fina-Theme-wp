@@ -1,25 +1,29 @@
 .Sidebar
 	display flex
-	align-items: strech
-
+	li				
+		a
+			display: block
+			color grey-clear
+			border-bottom 1px solid salmon
+			padding: 1rem
+		a:hover
+			background-color alpha(salmon, 0.3)
 	&-content
-		width 300px
+		width 0
 		overflow: hidden
 		transition: .5s
-		// background #9c4e4e
-		// height: 100%
-
+		h2
+			font-size: 2rem
+			color: salmon
+			margin-left 1rem
+		.width3
+			width 300px
 	&-slide
-		// height: 100%
 		width 1.5rem
-		// margin-right auto
 		background grey-clear
 		position: relative
-
-		// text-align: left
 		div
 			width 1rem
-			// background black-clear
 			background #9c4e4e
 			margin-left: auto
 			height 100%
@@ -27,5 +31,18 @@
 			position absolute
 			top 0
 			right 0
+	&-list
+		// li
+		// 	border-bottom 1px solid black
+		a
+			background-color alpha(salmon, 0.3)
+			
+		a:hover
+			padding-left 1.5rem
+			transition: .2s
+
+
 			// z-index: 400
 
+.width3
+	width 300px
