@@ -51,11 +51,11 @@
 	<i>por <strong><?php the_author(); ?></strong></i>
 	</div> -->			
 		</main>
-		<div class="Post-sidebar">
+		<div class="Sidebar">
 			<?php include TEMPLATEPATH . '/sidebar.php' ?>
 		</div>
-	
-<!-- // <?php get_footer(); ?> -->
+	</div>
+<?php get_footer(); ?>
 
 </body>
 

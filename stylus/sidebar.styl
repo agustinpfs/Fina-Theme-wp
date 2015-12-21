@@ -1,4 +1,31 @@
 .Sidebar
-	width 300px
-	overflow: hidden
-	background #9c4e4e
+	display flex
+	align-items: strech
+
+	&-content
+		width 300px
+		overflow: hidden
+		transition: .5s
+		// background #9c4e4e
+		// height: 100%
+
+	&-slide
+		// height: 100%
+		width 1.5rem
+		// margin-right auto
+		background grey-clear
+		position: relative
+
+		// text-align: left
+		div
+			width 1rem
+			// background black-clear
+			background #9c4e4e
+			margin-left: auto
+			height 100%
+			box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.75)
+			position absolute
+			top 0
+			right 0
+			// z-index: 400
+
