@@ -10,10 +10,12 @@
 <script>
 	function showSlider() {
 	$( ".Sidebar-content" ).addClass('width3')
+	$( ".Single-post" ).addClass('respo-post')
 
 	}
 	function hiddeSlider() {
 	$( ".Sidebar-content" ).removeClass('width3')
+	$( ".Single-post" ).removeClass('respo-post')
 
 	}
 	// $( ".Sidebar-slide" ).hover(showSlider)

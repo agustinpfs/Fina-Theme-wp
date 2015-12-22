@@ -6,20 +6,23 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body class="Single">
-	<header class="Single-header">
-		<div class="Single-logo">
-			<figure>
-				<h1 class="Single-h1">F</h1>
-			</figure>
-			<h2><?php bloginfo('description' ); ?></h2>
-		</div>
-	</header>
+	
 	<div class="Single-container">
 		<main class="Single-post">
+
 	 		<?php rewind_posts(); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>				
-				<article class="Single-article">					
+				<article class="Single-article">
+					<header class="Single-header">
+						<div class="Single-logo">
+							<figure>
+								<h1 class="Single-h1">F</h1>
+							</figure>
+							<h2><?php bloginfo('description' ); ?></h2>
+						</div>
+					</header>					
 					<?php include TEMPLATEPATH . '/contact.php' ?>
+					
 					<h1 class="Single-title">						
 						<?php the_title(); ?>						
 					</h1>				
@@ -27,17 +30,21 @@
 						<?php the_post_thumbnail(large); ?>
 					</figure>
 					<div class="Single-content">
-				     <?php the_content(); ?>
-					</div>			
-					<div class="Post-data Post-data--footer  ">
-						<div class="Post-cat">
+						<div class="Single-data">
+							<small><?php the_date(); ?></small>
+							<i><small>por</small> <strong><?php the_author(); ?></strong></i>
+						</div> 
+					     <?php the_content(); ?>
+					     <div class="Single-data Single-data--footer">
 		 					<span>Categoría</span>
-		 					<small><?php the_category(); ?></small>
-	 					</div> 					
-					</div>	
-					<div class="Single-comments">
-						<?php comments_template(); ?>
-					</div>		
+		 					<a href="#"><?php the_category(); ?></a>
+						</div>
+						<div class="Single-comments">
+							<?php comments_template(); ?>
+						</div>
+					</div>			
+						
+							
 				</article>
 				<?php endwhile; ?>
 				<!-- post navigation -->
@@ -46,10 +53,7 @@
 				<!-- no posts found -->
 				<?php endif; ?>
 
-	<!-- <div class="Post-data">
-	<small><?php the_date(); ?></small>
-	<i>por <strong><?php the_author(); ?></strong></i>
-	</div> -->			
+		
 		</main>
 		<div class="Sidebar">
 			<?php include TEMPLATEPATH . '/sidebar.php' ?>

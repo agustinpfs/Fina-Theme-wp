@@ -2,6 +2,8 @@
 	&-container
 		display: flex
 		align-items: strech
+		transition: .5s
+
 		// padding-left 4rem
 		// background-color black
 		// width 100%
@@ -9,10 +11,14 @@
 		// background-color #1c0f0f
 	&-post 
 		margin 0 auto
+		transition: .5s
+
 	&-article
 		color grey
 		// width 100%
-		margin 0 auto	
+		margin 0 auto
+		transition: .5s
+
 	&-title
 		font-size: 4em
 		color #9c4e4e
@@ -24,8 +30,62 @@
 		top 3rem
 		left 2rem
 		font-size: 1em
+		
 	&-content
 		width 70%
 		margin: 0 auto
+		transition: .5s
+
+	&-data
+		display flex 
+		justify-content: space-between
+		border-bottom 1px solid grey
+		margin-top 2rem
+		margin-bottom 4rem
+		&--footer
+			justify-content: flex-start
+			a 
+				font-size: .8rem
+				margin-left .2rem
+				font-style: italic
+				color grey
+		
+	&-comments
+		margin-bottom 4rem
+		input
+		textarea 
+			background-color alpha(grey, 0.3)
+			border 0
 	figure 
 		text-align: center
+
+
+
+@media (max-width: 880px)
+	.Single
+		transition: .5s
+		&-title
+			font-size: 2em
+			padding-top 6rem
+		&-logo
+			position: relative
+			top 3rem
+			left 0
+			right: 0
+			font-size: 1em
+			margin-left: auto;
+			margin-right: auto;
+			h2
+				text-align: center
+		&-content
+			width 90%
+			transition: .5s
+		
+
+
+	.respo-post			
+		width 5%
+		overflow: hidden
+		transition: .5s
+	
+
