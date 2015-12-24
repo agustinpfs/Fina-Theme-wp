@@ -7,7 +7,7 @@
 </head>
 <body>
 	
-	<main class="Single">
+	<div class="Single">
 		<header class="Single-header">
 			<div class="Single-logo">
 				<figure>
@@ -51,11 +51,12 @@
 				<h3>No se encontraron entradas</h3>
 			<!-- no posts found -->
 			<?php endif; ?>
-		<div class="Sidebar">
-			<?php include TEMPLATEPATH . '/sidebar.php' ?>
-		</div>
+		
 	
-	</main>
+	</div>
+	<div id="sidebar" class="Sidebar">
+		<?php include TEMPLATEPATH . '/sidebar.php' ?>
+	</div>
 	
 <?php get_footer(); ?>
 
