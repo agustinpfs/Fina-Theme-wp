@@ -1,5 +1,18 @@
 .Sidebar
 	display flex
+	width 30vw
+	overflow-y: scroll
+	transition: .5s
+	position: absolute
+	right: calc(-30vw + 20px)
+	top 0
+	background-color black
+	border-bottom 5px solid salmon
+	height: 100%
+	&-content
+		width 100%
+		position relative
+		overflow-y: scroll	
 	li				
 		a
 			display: block
@@ -7,21 +20,16 @@
 			border-bottom 1px solid salmon
 			padding: 1rem
 		a:hover
-			background-color alpha(salmon, 0.3)
-	&-content
-		width 0
-		overflow: hidden
-		transition: .5s
+			background-color alpha(salmon, 0.3)		
 		h2
 			font-size: 2rem
 			color: salmon
 			margin-left 1rem
-		.width3
-			width 300px
 	&-slide
 		width 1.5rem
 		background grey-clear
 		position: relative
+
 		div
 			width 1rem
 			background #9c4e4e
@@ -32,23 +40,19 @@
 			top 0
 			right 0
 	&-list
-		// li
-		// 	border-bottom 1px solid black
 		a
-			background-color alpha(salmon, 0.3)
-			
+			background-color alpha(salmon, 0.3)			
 		a:hover
 			padding-left 1.5rem
 			transition: .2s
-
-
-			// z-index: 400
-
-.width3
-	width 300px
-	
-
+.slide-menu
+	right 0 !important
+	overflow hidden
 
 @media (max-width: 880px)
-	.width3
-		min-width 90vw
+
+	.Sidebar		
+		width 80vw
+		right: calc(-80vw + 20px)
+
+		
