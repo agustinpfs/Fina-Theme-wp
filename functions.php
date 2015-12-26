@@ -3,6 +3,7 @@
 add_theme_support( 'post-thumbnails' );
 
 add_image_size('custom', 60, 60);
+add_image_size('cat', 160, 160, true);
 
 
 function register_my_menus() {
@@ -21,6 +22,22 @@ function longitud_excerpt($length) {
     return 20;
 }
 add_filter('excerpt_length', 'longitud_excerpt');
+
+
+// other excerpt
+
+function get_the_other_excerpt(){
+$permalink = get_permalink($post->ID);
+$excerpt = get_the_content();
+$excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+$excerpt = strip_shortcodes($excerpt);
+$excerpt = strip_tags($excerpt);
+$excerpt = substr($excerpt, 0, 600);
+$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+$excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+$excerpt = $excerpt.'... <a href="'.$permalink.'">Más...</a>';
+return $excerpt;
+}
 
 
 // register sidebar 
@@ -47,3 +64,11 @@ function myplugin_register_sidebar(){
 }
 
 add_action('widgets_init', 'myplugin_register_sidebar' );
+
+
+// link to home
+function menu_args($args) {
+	 $args['show_home'] = true; 
+	 return $args; } 
+
+add_filter('wp_page_menu_args', 'menu_args');

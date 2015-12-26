@@ -1,10 +1,14 @@
-
+<?php 
+/*
+Template Name: Página index
+*/ ?>
 <?php get_header(); ?>
 
 
 <main class="Index">
 		<?php rewind_posts(); ?>
-		<?php query_posts('cat=2'); ?>
+<!-- 		// <?php query_posts('cat=2'); ?>
+ -->		<?php query_posts('posts_per_page=3'); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<article class="Index-article">
 				<a href="<?php the_permalink(); ?>">

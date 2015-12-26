@@ -11,6 +11,7 @@
 <script>
 	function showSlider() {
 	$( ".Sidebar" ).addClass('slide-menu')
+	// $( ".body" ).addClass('ofly-h')
 	// $( ".close" ).addClass('x')
 	// $( ".Single-post" ).addClass('respo-post')
 

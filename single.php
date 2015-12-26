@@ -4,18 +4,12 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="<?php bloginfo(stylesheet_url ); ?>">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	
 	<div class="Single">
-		<header class="Single-header">
-			<div class="Single-logo">
-				<figure>
-					<h1 class="Single-h1">F</h1>
-				</figure>
-				<h2><?php bloginfo('description' ); ?></h2>
-			</div>
-		</header>
+			<?php include TEMPLATEPATH . '/logo.php' ?>
  		<?php rewind_posts(); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>				
 		<article class="Single-article">
@@ -30,7 +24,7 @@
 			</figure>
 			<div class="Single-content">
 				<div class="Single-data">
-					<small><?php the_date(); ?></small>
+					<div><?php the_date(); ?></div>
 					<i><small>por</small> <strong><?php the_author(); ?></strong></i>
 				</div> 
 			     <?php the_content(); ?>
@@ -57,6 +51,7 @@
 	<div id="sidebar" class="Sidebar">
 		<?php include TEMPLATEPATH . '/sidebar.php' ?>
 	</div>
+
 	
 <?php get_footer(); ?>
 
