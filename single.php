@@ -9,20 +9,23 @@
 <body>
 	
 	<div class="Single">
-			<?php include TEMPLATEPATH . '/logo.php' ?>
+		<?php include TEMPLATEPATH . '/logo.php' ?>
+		<hr class="Single-hr">						
+
  		<?php rewind_posts(); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>				
 		<article class="Single-article">
 								
 <!-- 			// <?php include TEMPLATEPATH . '/contact.php' ?>
  -->			
-			<h1 class="Single-title">						
+			
+			<div class="Single-content">
+			<h1 class="Single-title">
 				<?php the_title(); ?>						
 			</h1>				
 			<figure>
 				<?php the_post_thumbnail(large); ?>
 			</figure>
-			<div class="Single-content">
 				<div class="Single-data">
 					<div><?php the_date(); ?></div>
 					<i><small>por</small> <strong><?php the_author(); ?></strong></i>

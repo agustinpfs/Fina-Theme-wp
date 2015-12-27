@@ -10,9 +10,10 @@
 			</ul>
 		</aside>
 		<aside class="Footer-subscribe">
-			
-			<input type="text" placeholder="e-mail">
-			<input type="submit" value="subscribe">
+			<div class="Footer-form">
+				<input type="text" placeholder="e-mail">
+				<input type="submit" value="subscribe">
+			</div>
 
 		</aside>
 		<aside class="Footer-menu">

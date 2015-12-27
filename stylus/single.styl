@@ -1,6 +1,12 @@
 
 	
 .Single
+	&-hr
+		width 35%
+		float left
+		margin-top 9rem
+		
+		// display: none
 	// position relative
 	// overflow hidden
 	margin-bottom 4rem
@@ -19,14 +25,15 @@
 	&-title
 		font-size: 4em
 		color #9c4e4e
-		text-align: center
-		padding 3rem 0
-	&-logo
-		color grey
-		position: absolute
-		top 3rem
-		left 2rem
-		font-size: 1em
+		text-align: right
+		padding-top 7rem
+		padding-bottom 3rem
+	// &-logo
+	// 	color grey
+	// 	position: absolute
+	// 	top 3rem
+	// 	left 2rem
+	// 	font-size: 1em
 		
 	&-content
 		width 70%
@@ -43,11 +50,16 @@
 		color salmon
 		&--footer
 			justify-content: flex-start
+	
 			a 
 				font-size: .8rem
 				margin-left .2rem
 				font-style: italic
 				color grey
+			li
+				display: inline-block
+				vertical-align: middle
+				margin 0 5px
 		
 	&-comments
 		input
@@ -55,27 +67,37 @@
 			background-color alpha(grey, 0.3)
 			border 0
 			max-width: 90%
+		a
+			color salmon
 	figure 
 		text-align: center
+	img
+		max-height: 700px
+		width auto
+		overflow hidden
 
 
 
 @media (max-width: 880px)
 	.Single
+		&-hr
+			display: block
+			width 50%
+			float left
 		transition: .5s
 		&-title
-			font-size: 2em
-			padding-top 6rem
-		&-logo
-			position: relative
-			top 3rem
-			left 0
-			right: 0
-			font-size: 1em
-			margin-left: auto;
-			margin-right: auto;
-			h2
-				text-align: center
+			font-size: 3em
+			padding-top 7rem
+		// &-logo
+		// 	position: absolute
+		// 	top 3rem
+		// 	left 0
+		// 	right: 0
+		// 	// font-size: 1em
+		// 	margin-left: auto;
+		// 	margin-right: auto;
+		// 	h2
+		// 		text-align: center
 		&-content
 			width 90%
 			transition: .5s
